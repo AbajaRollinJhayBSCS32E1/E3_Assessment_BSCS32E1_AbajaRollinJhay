@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script>
+            function checkEvenOrOdd() {
+                
+                var userInput = document.getElementById('userInput').value;
+    
+                
+                if (!isNaN(userInput)) {
+                    var result = (userInput % 2 === 0) ? 'even' : 'odd';
+    
+                    
+                    document.getElementById('result').innerHTML = `The number ${userInput} is ${result}.`;
+                } else {
+                    
+                    document.getElementById('result').innerHTML = 'Please enter a valid number.';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to...</h1>
+        <p>This is a paragraph...</p>
+
+        <h1>Even or Odd Checker</h1>
+
+        <label for="userInput">Enter a number: </label>
+        <input type="text" id="userInput">
+
+        
+        <button onclick="checkEvenOrOdd()">Check Even or Odd</button>
+
+        
+        <p id="result"></p>
+        
+        <img src="main-menu2.jpg" alt="Description of the image">
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <p>Visit our <a href="https://www.example.com" target="_blank">external website</a>.</p>
+
+        <h3 style="color: rgb(39, 37, 37);">Your H3 Heading</h3>
+    </body>
+</html>
